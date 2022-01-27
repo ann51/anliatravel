@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script>
+        setInterval(() => {
+            d = new Date(); //object of date()
+            hr = d.getHours();
+            min = d.getMinutes();
+            sec = d.getSeconds();
+            hr_rotation = 30 * hr + min / 2; //converting current time
+            min_rotation = 6 * min;
+            sec_rotation = 6 * sec;
+  
+            hour.style.transform = `rotate(${hr_rotation}deg)`;
+            minute.style.transform = `rotate(${min_rotation}deg)`;
+            second.style.transform = `rotate(${sec_rotation}deg)`;
+        }, 1000);
+    </script>
+</head>
+<body>
+    <div class="bg">
+    <header>
+        <nav>
+            <img src="Images/logo.png" class="Logo" width="150" height="150">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="history.html">HISTORY</a></li>
+                <li><a href="heritage.html">HERITAGE</a></li>
+                <li><a href="entertainment.html">ENTERTAINMENT</a></li>
+                <li><a href="food.html">FOOD</a></li>
+                <li><a href="accomodation.html">ACCOMODATION</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>            
+            </ul> 
+        </nav>
+    </header>
+    <main class="hpmain">
+        <div class="clock">
+            <p style="color: antiquewhite;"><strong>TIME</strong></p>
+            <div id="clockContainer">
+                <div id="hour"></div>
+                <div id="minute"></div>
+                <div id="second"></div>
+            </div>
+        </div>
+
+        <section class="row">
+            <article class="maintext">
+                <h1 style="color: white;">Let's Explore</h1>
+                br
+                <h1 style="color: white;">Your Dream Destination in</h1>
+                br
+                <h1 style="color:rgb(253, 233, 185);">IPOH OLD TOWN</h1>
+            </article>
+        </section>
+
+        <section class="row2">   
+            <article class="col">
+                <div class="card">
+                    <h3><a href="history.html">Know More About Ipoh</a></h3> 
+                </div>
+            </article>
+            <article class="col">
+                <div class="card">
+                    <h3><a href="food.html">Check Out Best Place To Eat</a></h3>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card">
+                    <h3><a href="heritage.html">Heritage in Ipoh Old Town</a></h3>
+                </div>
+            </article>
+            <article class="col">
+                <div class="card">
+                    <h3><a href="entertainment.html">Entertainment With Family</a></h3>   
+                </div>
+            </article>
+        </section>
+    </main>
+
+    </div>
+    <footer class="footer">
+        <h3><a target="_blank" href="webmaster.html">WEBMASTER</a></h3>
+        <h3>Follow us on:</h3>
+        <a target="_blank" href="https://www.instagram.com/anliatravel/"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="https://www.pinterest.com/anliatravel/"><i class="fa fa-pinterest"></i></a>
+    </footer>
+</body>
+</html>

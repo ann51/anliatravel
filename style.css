@@ -1,0 +1,683 @@
+*{
+    margin: auto;
+    padding: 0;
+    font-family:"Times New Roman","Garamond" "sans-serif";
+    box-sizing: border-box;
+}
+
+.bg{
+    background-image: url(images/Ipohbg.jpg);
+    height: 100%;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg1{ 
+    height: 100%;
+    width: 100%;;
+    background-position:center;
+    background-size: cover;
+    background-color: lightblue;
+    background-repeat: no-repeat;
+}
+
+/* Header*/
+header{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    background-color:teal;
+}
+
+nav{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+li a:hover{
+    background-color: rgb(185, 166, 141);
+    transition: 0.6s ease;
+}
+
+.imagelogo{
+    float: left;
+    width: 20%; 
+    height: auto;
+}
+
+
+/*Main Content Homepage*/
+.clock{
+    float: right;
+    padding: 10px;
+    height: 100%;
+}
+
+.clock p{
+    font-family: Garamond;
+    text-align: center;
+    font-size: 30px;
+}
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 10vw;
+    /*to make the height and width responsive*/
+    width: 10vw;
+    background: url(Images/clock_Project.png) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+}
+  
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: rgb(78, 75, 68);
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+  
+#hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+}
+  
+#minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+}
+  
+#second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+}
+/*clockcontainerend*/
+
+.row{
+    padding: 0 10%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 5%;
+}
+
+.maintext{
+    border-style: hidden;
+    padding: 100px;
+}
+.maintext h1{
+    font-size: 50px;
+    font-weight: 700;
+    text-decoration-color: white;
+}
+
+.col{
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.row2:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+.card {
+    box-shadow: 0 4px 8px 0 rgb(56, 56, 56);
+    padding: 16px;
+    text-align: center;
+    background-color: lightblue;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.card:hover {opacity: 0.8;}
+
+.card a:link{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.card a:visited{
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+.card a:hover{
+    color: none;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.card a:active{
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:teal;
+}
+
+.footer h3{
+    font-size: 20px;
+    color: white;
+    margin-right: 40px;
+}
+
+.footer p{
+    color: white;
+}
+
+.footer a{
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    transition: transform .3s;
+}
+
+.footer a:hover{
+    transform: scale(2);
+    color: silver;
+}
+
+/*HISTORY*/
+.title{
+    padding-top: 30px;
+    text-align: center;
+    font-family: "Garamond", "serif";
+    font-size: 20px;
+}
+
+.title h2{
+    text-shadow: 2px 2px 5px rgb(41, 41, 41);
+}
+
+.title h4{
+    border-style:hidden;
+    width:1500px;
+    padding: 10px;
+    text-align: center;
+}
+
+.cont-history {
+    padding: 64px;
+}
+  
+.row-history:after {
+    content: "";
+    display: table;
+    clear: both
+}
+  
+.column-history1 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+  
+.column-history2 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+  
+.post{
+    font-size: 20px;
+    font-family: Garamond;
+    text-align: justify;
+}
+
+.references{
+    border-style: hidden;
+    margin-left: 500px;
+    position: relative;
+    text-align: justify;
+    padding: 20px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: teal;
+}
+  
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+  
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+      margin: auto;
+    }
+}
+
+/*heritage*/
+.cont-{
+    padding: 64px;
+}
+.row-heritage:after {
+    content: "";
+    display: table;
+    clear: both
+}
+  
+.column-heritage1 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+  
+.column-heritage2 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+  
+.large-font {
+    font-size: 48px;
+}
+  
+.xlarge-font {
+    font-size: 64px
+}
+  
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: teal;
+}
+  
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+  
+@media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+        margin: auto;
+      }
+}
+
+.imagestreetart{
+    width: 20%; 
+    height: auto;
+    align-content:center;
+
+}
+.imagektmipoh{
+    width: 20%; 
+    height: auto;
+    align-content: center;
+}
+
+.imagelittleindia{
+    width: 20%; 
+    height: auto;
+    align-content: center;
+}
+.imagebirchtown{
+    width: 20%; 
+    height: auto;
+    align-content: center; 
+}
+.imageconcubinelane{
+    width: 20%; 
+    height: auto;
+    align-content: center;
+}
+
+/*entertainment*/
+.cont-{
+  padding: 64px;
+}
+
+.row-entertainment:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-entertainment1 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-entertainment2 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: teal;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+      margin: auto;
+    }
+}
+
+.imagetamankanakkanak{
+    width: 20%; 
+    height: auto;
+    align-content:center;
+
+}
+.imagepadangipoh{
+    width: 20%; 
+    height: auto;
+    align-content: center;
+}
+
+.imageloken{
+    width: 20%; 
+    height: auto;
+    align-content: center;
+}
+.imageriverfront{
+    width: 20%; 
+    height: auto;
+    align-content: center; 
+}
+.imagegerbangmalam{
+    width: 20%; 
+    height: auto;
+    align-content: center;
+}
+/*FOOD*/
+
+.row-food{
+    display: flex;
+    text-align: center;
+}
+
+div.foodgallery {
+    border: 1px solid #ccc;
+}
+  
+div.foodgallery:hover {
+    border: 1px solid #777;
+}
+  
+div.foodgallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.fooddesc {
+    padding: 15px;
+    text-align: center;
+}
+
+.fooddesc h3{
+    padding: 1px;
+    font-style: italic;
+}
+
+.fooddesc p{
+    text-align: center;
+    padding: 1px;
+}
+
+* {
+    box-sizing: border-box;
+}
+  
+.foodresponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .foodresponsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .foodresponsive {
+      width: 100%;
+    }
+}
+  
+.row-food:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fooddesc p i {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+    border-radius: 50%;
+}
+
+.fooddesc i {
+    background: rgb(172, 144, 107);
+    color: white;
+  }
+
+/*accomodation*/
+
+
+/*news*/
+.cont-news {
+    padding: 64px;
+}
+      
+.row-news:after {
+    content: "";
+    display: table;
+    clear: both
+}
+      
+.column-news1 {
+    float: left;
+    width: 66.66666%;
+    padding: 20px;
+}
+      
+.column-news2 {
+    float: left;
+    width: 33.33333%;
+    padding: 20px;
+}
+      
+.large-font {
+    font-size: 48px;
+}
+      
+.xlarge-font {
+    font-size: 64px
+}
+
+ol li{
+    text-align: justify;
+}
+
+@media screen and (max-width: 1000px) {
+    .column-news2,
+    .column-news1 {
+      width: 100%;
+      text-align: center;
+    }
+    img {
+        margin: auto;
+    }
+}
+
+.row-news{
+    display: flex;
+    text-align: center;
+}
+
+div.newsgallery {
+    border: 1px solid #ccc;
+}
+  
+div.newsgallery:hover {
+    border: 1px solid #777;
+}
+  
+div.newsgallery img {
+    width: 100%;
+    height: auto;
+}
+  
+div.newsdesc {
+    padding: 15px;
+    text-align: center;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+  
+.newsresponsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .newsresponsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .newsresponsive {
+      width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Contact*/
+.row-contact{
+    padding: 5px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.col-cont{
+    flex-basis: 50%;
+}
+
+.col-imgcont{
+    flex-basis: 50%;
+}
+
+.col-cont h2{
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.col-cont p{
+    font-size: 25px;
+    margin: 20px 0 70px;
+}
